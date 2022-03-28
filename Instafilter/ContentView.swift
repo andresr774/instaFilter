@@ -145,11 +145,16 @@ struct ContentView: View {
         
         let filterName = currentFilter.name.lowercased()
         
+        filterDisplayName = ""
+        
         if filterName.contains("sepia") {
             filterDisplayName = "Sepia Tone"
         }
         if filterName.contains("crystallize") {
             filterDisplayName = "crystallize".capitalized
+        }
+        if filterName.contains("edges") {
+            filterDisplayName = "edges".capitalized
         }
         if filterName.contains("gaussian") {
             filterDisplayName = "gaussian blur".capitalized
